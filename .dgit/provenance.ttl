@@ -1,0 +1,29 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix git: <http://www.example.com/ns/#> .
+@prefix prov: <http://www.w3.org/prov/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file://home/india/git_experiment/pushing> a git:repository,
+        prov:Collection ;
+    git:hadLogMember <http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> ;
+    prov:GeneratedAtTime "2013-07-26T11:00:34-0400" ;
+    prov:atLocation "/home/india/git_experiment/pushing" ;
+    prov:hadMember <http://example.com/object/blob/44f1647a6bf991c15d526519421a0144bb0ba9cb> .
+
+<http://example.com/object/blob/44f1647a6bf991c15d526519421a0144bb0ba9cb> a git:blob,
+        prov:Entity ;
+    git:asOf <http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> ;
+    prov:atLocation "/home/india/git_experiment/pushing/README.md" ;
+    prov:wasGeneratedBy git:commit ;
+    foaf:name "README.md" .
+
+<http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> a git:commit,
+        prov:Activity ;
+    rdfs:comment "Initial commit" ;
+    prov:GeneratedAtTime "2013-07-26T07:55:42-0700" ;
+    prov:wasAttributedTo "indiastewart" .
+
+
