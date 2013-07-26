@@ -16,6 +16,14 @@
     prov:hadMember <http://example.com/object/blob/727e8c9018fc1f3bacaca327b1a6a11fd2d81afb>,
         <http://example.com/object/blob/9a16e44980c338096ecc21db7a962e60330ccf64> .
 
+<file://home/judy/Desktop/pushing> git:hadLogMember <http://example.com/object/commit/1d130ccda28ae8600c291bff6e4fa6489c9922e2>,
+        <http://example.com/object/commit/3efc03b88a215ebfbe5e444360e43efa981f6434>,
+        <http://example.com/object/commit/5e3216e04c8595470889c01986a08c3b3962b03c>,
+        <http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> ;
+    prov:hadMember <http://example.com/object/blob/9a16e44980c338096ecc21db7a962e60330ccf64>,
+        <http://example.com/object/blob/c0cbd62f74be868d4aac304fe4d9bad8962ca089>,
+        <http://example.com/object/blob/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391> .
+
 <http://example.com/object/blob/44f1647a6bf991c15d526519421a0144bb0ba9cb> a git:blob,
         prov:Entity ;
     git:asOf <http://example.com/object/commit/5e3216e04c8595470889c01986a08c3b3962b03c> ;
@@ -37,18 +45,30 @@
     prov:wasGeneratedBy git:commit ;
     foaf:name "provenance.ttl" .
 
+<http://example.com/object/blob/c0cbd62f74be868d4aac304fe4d9bad8962ca089> a git:blob,
+        prov:Entity ;
+    git:asOf <http://example.com/object/commit/1d130ccda28ae8600c291bff6e4fa6489c9922e2> ;
+    prov:atLocation "/home/judy/Desktop/pushing/.dgit/provenance.ttl" ;
+    prov:wasGeneratedBy git:commit ;
+    foaf:name "provenance.ttl" .
+
+<http://example.com/object/blob/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391> a git:blob,
+        prov:Entity ;
+    git:asOf <http://example.com/object/commit/1d130ccda28ae8600c291bff6e4fa6489c9922e2> ;
+    prov:atLocation "/home/judy/Desktop/pushing/1" ;
+    prov:wasGeneratedBy git:commit ;
+    foaf:name "1" .
+
+<www.example.com/judy> a prov:Agent ;
+    foaf:mbox "jlong9@nd.edu" .
+
 <http://example.com/object/blob/9a16e44980c338096ecc21db7a962e60330ccf64> a git:blob,
         prov:Entity ;
-    git:asOf <http://example.com/object/commit/3efc03b88a215ebfbe5e444360e43efa981f6434> ;
-    prov:atLocation "/home/india/git_experiment/pushing/README.md" ;
+    git:asOf <http://example.com/object/commit/1d130ccda28ae8600c291bff6e4fa6489c9922e2> ;
+    prov:atLocation "/home/india/git_experiment/pushing/README.md",
+        "/home/judy/Desktop/pushing/README.md" ;
     prov:wasGeneratedBy git:commit ;
     foaf:name "README.md" .
-
-<http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> a git:commit,
-        prov:Activity ;
-    rdfs:comment "Initial commit" ;
-    prov:GeneratedAtTime "2013-07-26T07:55:42-0700" ;
-    prov:wasAttributedTo "indiastewart" .
 
 <http://example.com/user/foaf/#me> a prov:Agent ;
     foaf:mbox "india.stewart@uky.edu" .
@@ -57,14 +77,29 @@
         prov:Activity ;
     rdfs:comment "edited readme" ;
     prov:GeneratedAtTime "2013-07-26T11:04:24-0400" ;
-    prov:wasAttributedTo <http://example.com/user/foaf/#me> ;
+    prov:wasAttributedTo <http://example.com/user/foaf/#me>,
+        "India Stewart" ;
     prov:wasDerivedFrom <http://example.com/object/commit/f5d2e0962df92ca33615e4dea32176b1d1f90509> .
+
+<http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> a git:commit,
+        prov:Activity ;
+    rdfs:comment "Initial commit" ;
+    prov:GeneratedAtTime "2013-07-26T07:55:42-0700" ;
+    prov:wasAttributedTo "indiastewart" .
+
+<http://example.com/object/commit/1d130ccda28ae8600c291bff6e4fa6489c9922e2> a git:commit,
+        prov:Activity ;
+    rdfs:comment "1" ;
+    prov:GeneratedAtTime "2013-07-26T11:17:10-0400" ;
+    prov:wasAttributedTo <www.example.com/judy> ;
+    prov:wasDerivedFrom <http://example.com/object/commit/2c7ee765989fa7f066f19db037722220a73ab04e> .
 
 <http://example.com/object/commit/5e3216e04c8595470889c01986a08c3b3962b03c> a git:commit,
         prov:Activity ;
     rdfs:comment "initial dgit commit" ;
     prov:GeneratedAtTime "2013-07-26T11:00:50-0400" ;
-    prov:wasAttributedTo <http://example.com/user/foaf/#me> ;
+    prov:wasAttributedTo <http://example.com/user/foaf/#me>,
+        "India Stewart" ;
     prov:wasDerivedFrom <http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> .
 
 
