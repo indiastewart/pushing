@@ -30,12 +30,20 @@
         <http://example.com/object/commit/1d130ccda28ae8600c291bff6e4fa6489c9922e2>,
         <http://example.com/object/commit/3cd03eaea55d8f1258305599fe84dfbc8b7b5f5d>,
         <http://example.com/object/commit/3efc03b88a215ebfbe5e444360e43efa981f6434>,
+        <http://example.com/object/commit/4790820e12ffe06a3d630d4c4b9f1fab33fdbd41>,
         <http://example.com/object/commit/5e3216e04c8595470889c01986a08c3b3962b03c>,
-        <http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> ;
-    prov:hadMember <http://example.com/object/blob/5ca322c09251012f38b59c2cebbab4e6cd2ccd80>,
+        <http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058>,
+        <http://example.com/object/commit/8cad0b2443debd6fc0c38e131fc1d0f15ff4fd7e>,
+        <http://example.com/object/commit/c29384da7d9e872617ebe803a22e814feab7c8e9>,
+        <http://example.com/object/commit/fccff9b1acc4e7f05588eb7b3222128e39422512> ;
+    prov:hadMember <http://example.com/object/blob/0cd0345a78cb58d327a6608e021ce747dec02d8d>,
+        <http://example.com/object/blob/5ca322c09251012f38b59c2cebbab4e6cd2ccd80>,
         <http://example.com/object/blob/8c50723f84fed9b74fb38ef8d9c22bc4937d1488>,
         <http://example.com/object/blob/9a16e44980c338096ecc21db7a962e60330ccf64>,
-        <http://example.com/object/blob/c3a37b3ed695507eb4c7e6ac58b215be0303d6a2>,
+        <http://example.com/object/blob/a71afeaa431110713833d12e0789190bef36937d>,
+        <http://example.com/object/blob/c5cd7339e09b6234c5b95fdc30204a65cdd96d90>,
+        <http://example.com/object/blob/d505e67965e7080d272f7e77d5ea1008c74bec28>,
+        <http://example.com/object/blob/dadca9e195fe076d495512820acbe167188c151d>,
         <http://example.com/object/blob/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391> .
 
 <file://home/judy/Desktop/pushing> git:hadLogMember <http://example.com/object/commit/0f1e6a29b9640c13527d49c6c990561f1b584e0c>,
@@ -98,6 +106,13 @@
     prov:wasGeneratedBy git:commit ;
     foaf:name "provenance.ttl" .
 
+<http://example.com/object/blob/c3a37b3ed695507eb4c7e6ac58b215be0303d6a2> a git:blob,
+        prov:Entity ;
+    git:asOf <http://example.com/object/commit/0f1e6a29b9640c13527d49c6c990561f1b584e0c> ;
+    prov:atLocation "/home/india/git_experiment/pushing2/.dgit/provenance.ttl" ;
+    prov:wasGeneratedBy git:commit ;
+    foaf:name "provenance.ttl" .
+
 <file:///home/judy/Desktop/pushing/.dgit/www.example.com/judy> a prov:Agent ;
     foaf:mbox "jlong9@nd.edu" .
 
@@ -115,16 +130,16 @@
     prov:wasGeneratedBy git:commit ;
     foaf:name "provenance.ttl" .
 
-<http://example.com/object/blob/a71afeaa431110713833d12e0789190bef36937d> a git:blob,
+<http://example.com/object/blob/d505e67965e7080d272f7e77d5ea1008c74bec28> a git:blob,
         prov:Entity ;
-    git:asOf <http://example.com/object/commit/8cad0b2443debd6fc0c38e131fc1d0f15ff4fd7e> ;
-    prov:atLocation "/home/judy/Desktop/pushing/6" ;
+    git:asOf <http://example.com/object/commit/c29384da7d9e872617ebe803a22e814feab7c8e9> ;
+    prov:atLocation "/home/india/git_experiment/pushing2/7" ;
     prov:wasGeneratedBy git:commit ;
-    foaf:name "6" .
+    foaf:name "7" .
 
-<http://example.com/object/blob/c3a37b3ed695507eb4c7e6ac58b215be0303d6a2> a git:blob,
+<http://example.com/object/blob/dadca9e195fe076d495512820acbe167188c151d> a git:blob,
         prov:Entity ;
-    git:asOf <http://example.com/object/commit/0f1e6a29b9640c13527d49c6c990561f1b584e0c> ;
+    git:asOf <http://example.com/object/commit/c29384da7d9e872617ebe803a22e814feab7c8e9> ;
     prov:atLocation "/home/india/git_experiment/pushing2/.dgit/provenance.ttl" ;
     prov:wasGeneratedBy git:commit ;
     foaf:name "provenance.ttl" .
@@ -132,28 +147,29 @@
 <file:///home/india/git_experiment/pushing2/.dgit/www.example.com/judy> a prov:Agent ;
     foaf:mbox "jlong9@nd.edu" .
 
-<http://example.com/object/blob/0cd0345a78cb58d327a6608e021ce747dec02d8d> a git:blob,
+<http://example.com/object/blob/a71afeaa431110713833d12e0789190bef36937d> a git:blob,
         prov:Entity ;
-    git:asOf <http://example.com/object/commit/8cad0b2443debd6fc0c38e131fc1d0f15ff4fd7e> ;
-    prov:atLocation "/home/india/git_experiment/pushing/5",
-        "/home/judy/Desktop/pushing/5" ;
+    git:asOf <http://example.com/object/commit/c29384da7d9e872617ebe803a22e814feab7c8e9> ;
+    prov:atLocation "/home/india/git_experiment/pushing2/6",
+        "/home/judy/Desktop/pushing/6" ;
     prov:wasGeneratedBy git:commit ;
-    foaf:name "5" .
-
-<http://example.com/object/blob/c5cd7339e09b6234c5b95fdc30204a65cdd96d90> a git:blob,
-        prov:Entity ;
-    git:asOf <http://example.com/object/commit/8cad0b2443debd6fc0c38e131fc1d0f15ff4fd7e> ;
-    prov:atLocation "/home/india/git_experiment/pushing/4",
-        "/home/judy/Desktop/pushing/4" ;
-    prov:wasGeneratedBy git:commit ;
-    foaf:name "4" .
+    foaf:name "6" .
 
 <http://example.com/user/foaf/#me> a prov:Agent ;
     foaf:mbox "india.stewart@uky.edu" .
 
+<http://example.com/object/blob/0cd0345a78cb58d327a6608e021ce747dec02d8d> a git:blob,
+        prov:Entity ;
+    git:asOf <http://example.com/object/commit/c29384da7d9e872617ebe803a22e814feab7c8e9> ;
+    prov:atLocation "/home/india/git_experiment/pushing/5",
+        "/home/india/git_experiment/pushing2/5",
+        "/home/judy/Desktop/pushing/5" ;
+    prov:wasGeneratedBy git:commit ;
+    foaf:name "5" .
+
 <http://example.com/object/blob/5ca322c09251012f38b59c2cebbab4e6cd2ccd80> a git:blob,
         prov:Entity ;
-    git:asOf <http://example.com/object/commit/8cad0b2443debd6fc0c38e131fc1d0f15ff4fd7e> ;
+    git:asOf <http://example.com/object/commit/c29384da7d9e872617ebe803a22e814feab7c8e9> ;
     prov:atLocation "/home/india/git_experiment/pushing/2",
         "/home/india/git_experiment/pushing2/2",
         "/home/judy/Desktop/pushing/2" ;
@@ -162,7 +178,7 @@
 
 <http://example.com/object/blob/8c50723f84fed9b74fb38ef8d9c22bc4937d1488> a git:blob,
         prov:Entity ;
-    git:asOf <http://example.com/object/commit/8cad0b2443debd6fc0c38e131fc1d0f15ff4fd7e> ;
+    git:asOf <http://example.com/object/commit/c29384da7d9e872617ebe803a22e814feab7c8e9> ;
     prov:atLocation "/home/india/git_experiment/pushing/3",
         "/home/india/git_experiment/pushing2/3",
         "/home/judy/Desktop/pushing/3" ;
@@ -171,36 +187,38 @@
 
 <http://example.com/object/blob/9a16e44980c338096ecc21db7a962e60330ccf64> a git:blob,
         prov:Entity ;
-    git:asOf <http://example.com/object/commit/8cad0b2443debd6fc0c38e131fc1d0f15ff4fd7e> ;
+    git:asOf <http://example.com/object/commit/c29384da7d9e872617ebe803a22e814feab7c8e9> ;
     prov:atLocation "/home/india/git_experiment/pushing/README.md",
         "/home/india/git_experiment/pushing2/README.md",
         "/home/judy/Desktop/pushing/README.md" ;
     prov:wasGeneratedBy git:commit ;
     foaf:name "README.md" .
 
+<http://example.com/object/blob/c5cd7339e09b6234c5b95fdc30204a65cdd96d90> a git:blob,
+        prov:Entity ;
+    git:asOf <http://example.com/object/commit/c29384da7d9e872617ebe803a22e814feab7c8e9> ;
+    prov:atLocation "/home/india/git_experiment/pushing/4",
+        "/home/india/git_experiment/pushing2/4",
+        "/home/judy/Desktop/pushing/4" ;
+    prov:wasGeneratedBy git:commit ;
+    foaf:name "4" .
+
 <http://example.com/object/blob/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391> a git:blob,
         prov:Entity ;
-    git:asOf <http://example.com/object/commit/8cad0b2443debd6fc0c38e131fc1d0f15ff4fd7e> ;
+    git:asOf <http://example.com/object/commit/c29384da7d9e872617ebe803a22e814feab7c8e9> ;
     prov:atLocation "/home/india/git_experiment/pushing/1",
         "/home/india/git_experiment/pushing2/1",
         "/home/judy/Desktop/pushing/1" ;
     prov:wasGeneratedBy git:commit ;
     foaf:name "1" .
 
-<http://example.com/object/commit/4790820e12ffe06a3d630d4c4b9f1fab33fdbd41> a git:commit,
+<http://example.com/object/commit/8cad0b2443debd6fc0c38e131fc1d0f15ff4fd7e> a git:commit,
         prov:Activity ;
-    rdfs:comment "4" ;
-    prov:GeneratedAtTime "2013-07-26T11:57:00-0400" ;
-    prov:wasAttributedTo <file:///home/india/git_experiment/pushing/.dgit/www.example.com/user/#me>,
-        "India Stewart" ;
-    prov:wasDerivedFrom <http://example.com/object/commit/0ac1b5bfa427d310d2a8bc012b0eb5e1552f03a7> .
-
-<http://example.com/object/commit/fccff9b1acc4e7f05588eb7b3222128e39422512> a git:commit,
-        prov:Activity ;
-    rdfs:comment "5" ;
-    prov:GeneratedAtTime "2013-07-26T12:37:26-0400" ;
-    prov:wasAttributedTo "India Stewart" ;
-    prov:wasDerivedFrom <http://example.com/object/commit/a1b9a0a4e8660b8856a13885f1f16ea501a4e8bf> .
+    rdfs:comment "6" ;
+    prov:GeneratedAtTime "2013-07-26T12:51:20-0400" ;
+    prov:wasAttributedTo <https://www.example.com/some>,
+        "judy" ;
+    prov:wasDerivedFrom <http://example.com/object/commit/cb195692c4123d0b2984385bef2d471698689c71> .
 
 <https://www.example.com/some> a prov:Agent ;
     foaf:mbox "jlong9@nd.edu" .
@@ -249,11 +267,26 @@
         "India Stewart" ;
     prov:wasDerivedFrom <http://example.com/object/commit/f5d2e0962df92ca33615e4dea32176b1d1f90509> .
 
+<http://example.com/object/commit/4790820e12ffe06a3d630d4c4b9f1fab33fdbd41> a git:commit,
+        prov:Activity ;
+    rdfs:comment "4" ;
+    prov:GeneratedAtTime "2013-07-26T11:57:00-0400" ;
+    prov:wasAttributedTo <file:///home/india/git_experiment/pushing/.dgit/www.example.com/user/#me>,
+        "India Stewart" ;
+    prov:wasDerivedFrom <http://example.com/object/commit/0ac1b5bfa427d310d2a8bc012b0eb5e1552f03a7> .
+
 <http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> a git:commit,
         prov:Activity ;
     rdfs:comment "Initial commit" ;
     prov:GeneratedAtTime "2013-07-26T07:55:42-0700" ;
     prov:wasAttributedTo "indiastewart" .
+
+<http://example.com/object/commit/fccff9b1acc4e7f05588eb7b3222128e39422512> a git:commit,
+        prov:Activity ;
+    rdfs:comment "5" ;
+    prov:GeneratedAtTime "2013-07-26T12:37:26-0400" ;
+    prov:wasAttributedTo "India Stewart" ;
+    prov:wasDerivedFrom <http://example.com/object/commit/a1b9a0a4e8660b8856a13885f1f16ea501a4e8bf> .
 
 <http://example.com/object/commit/5e3216e04c8595470889c01986a08c3b3962b03c> a git:commit,
         prov:Activity ;
@@ -265,11 +298,11 @@
         "India Stewart" ;
     prov:wasDerivedFrom <http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> .
 
-<http://example.com/object/commit/8cad0b2443debd6fc0c38e131fc1d0f15ff4fd7e> a git:commit,
+<http://example.com/object/commit/c29384da7d9e872617ebe803a22e814feab7c8e9> a git:commit,
         prov:Activity ;
-    rdfs:comment "6" ;
-    prov:GeneratedAtTime "2013-07-26T12:51:20-0400" ;
-    prov:wasAttributedTo <https://www.example.com/some> ;
-    prov:wasDerivedFrom <http://example.com/object/commit/cb195692c4123d0b2984385bef2d471698689c71> .
+    rdfs:comment "7" ;
+    prov:GeneratedAtTime "2013-07-26T16:06:56-0400" ;
+    prov:wasAttributedTo "India Stewart" ;
+    prov:wasDerivedFrom <http://example.com/object/commit/2ef4c909e050a89315a13a2f04bb7e448e1ea907> .
 
 
