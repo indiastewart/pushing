@@ -8,22 +8,41 @@
 
 <file://home/india/git_experiment/pushing> a git:repository,
         prov:Collection ;
-    git:hadLogMember <http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> ;
+    git:hadLogMember <http://example.com/object/commit/5e3216e04c8595470889c01986a08c3b3962b03c>,
+        <http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> ;
     prov:GeneratedAtTime "2013-07-26T11:00:34-0400" ;
     prov:atLocation "/home/india/git_experiment/pushing" ;
-    prov:hadMember <http://example.com/object/blob/44f1647a6bf991c15d526519421a0144bb0ba9cb> .
+    prov:hadMember <http://example.com/object/blob/44f1647a6bf991c15d526519421a0144bb0ba9cb>,
+        <http://example.com/object/blob/4f2d00c8bb3bee9c46bf7d4705bac1a153aa6851> .
 
 <http://example.com/object/blob/44f1647a6bf991c15d526519421a0144bb0ba9cb> a git:blob,
         prov:Entity ;
-    git:asOf <http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> ;
+    git:asOf <http://example.com/object/commit/5e3216e04c8595470889c01986a08c3b3962b03c> ;
     prov:atLocation "/home/india/git_experiment/pushing/README.md" ;
     prov:wasGeneratedBy git:commit ;
     foaf:name "README.md" .
+
+<http://example.com/object/blob/4f2d00c8bb3bee9c46bf7d4705bac1a153aa6851> a git:blob,
+        prov:Entity ;
+    git:asOf <http://example.com/object/commit/5e3216e04c8595470889c01986a08c3b3962b03c> ;
+    prov:atLocation "/home/india/git_experiment/pushing/.dgit/provenance.ttl" ;
+    prov:wasGeneratedBy git:commit ;
+    foaf:name "provenance.ttl" .
+
+<http://example.com/user/foaf/#me> a prov:Agent ;
+    foaf:mbox "india.stewart@uky.edu" .
 
 <http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> a git:commit,
         prov:Activity ;
     rdfs:comment "Initial commit" ;
     prov:GeneratedAtTime "2013-07-26T07:55:42-0700" ;
     prov:wasAttributedTo "indiastewart" .
+
+<http://example.com/object/commit/5e3216e04c8595470889c01986a08c3b3962b03c> a git:commit,
+        prov:Activity ;
+    rdfs:comment "initial dgit commit" ;
+    prov:GeneratedAtTime "2013-07-26T11:00:50-0400" ;
+    prov:wasAttributedTo <http://example.com/user/foaf/#me> ;
+    prov:wasDerivedFrom <http://example.com/object/commit/67edff130748de0c065c2d84786593cd41948058> .
 
 
